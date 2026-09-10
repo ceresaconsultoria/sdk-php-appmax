@@ -1,0 +1,32 @@
+{
+    "name": "ceresaconsultoria/sdk-php-appmax",
+    "description": "SDK PHP das Apis da AppMax",
+    "keywords": ["api", "library", "psr-4", "appmax", "sdk"],
+    "homepage": "https://github.com/ceresaconsultoria/sdk-php-appmax",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weslley Ceresa",
+            "email": "webflix.tecnologia@gmail.com",
+            "homepage": "https://www.webflix.tec.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppMax\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": []
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "victorjonsson/markdowndocs": "^1.3"
+    }
+}
