@@ -58,7 +58,7 @@ class AppMaxException extends Exception{
         
     }
     
-    public static function fromGuzzleException(mixed $ex){
+    public static function fromGuzzleException($ex){
         $className = get_class($ex);
         $responseBody = '['.$className.'] Body: ' . (string)$ex->getResponse()->getBody();
         return new AppMaxException( new Exception($responseBody, $ex->getCode(), $ex->getPrevious()) );
