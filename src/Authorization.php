@@ -26,7 +26,7 @@ class Authorization extends AppMaxController{
                         
         } catch (RequestException $ex) {
             
-            throw HubApiException::fromGuzzleException($ex);
+            throw AppMaxException::fromGuzzleException($ex);
                         
         } catch (Exception $ex) {
                  
@@ -53,7 +53,7 @@ class Authorization extends AppMaxController{
                         
         } catch (RequestException $ex) {
             
-            throw HubApiException::fromGuzzleException($ex);
+            throw AppMaxException::fromGuzzleException($ex);
                         
         } catch (Exception $ex) {
                  
