@@ -8,6 +8,20 @@ use AppMax\Exceptions\AppMaxException;
 
 class Order extends AppMaxController{
                
+    const PENDENTE = 'pendente';
+    const AUTORIZADO = 'autorizado';
+    const APROVADO = 'aprovado';
+    const CANCELADO = 'cancelado';
+    const RECUSADO_POR_RISCO = 'recusado_por_risco';
+    const ESTORNADO = 'estornado';
+    const INTEGRADO = 'integrado';
+    const PENDENTE_INTEGRACAO = 'pendente_integracao';
+    const PENDENTE_INTEGRACAO_EM_ANALISE = 'pendente_integracao_em_analise';
+    const CHARGEBACK_EM_TRATATIVA = 'chargeback_em_tratativa';
+    const CHARGEBACK_EM_DISPUTA = 'chargeback_em_disputa';
+    const CHARGEBACK_PERDIDO = 'chargeback_perdido';
+    const CHARGEBACK_VENCIDO = 'chargeback_vencido'; 
+    
     public function create(array $data) {     
         
         try{
