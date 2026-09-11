@@ -5,6 +5,7 @@ namespace AppMax;
 use Exception;
 use AppMax\Core\AppMaxController;
 use AppMax\Exceptions\AppMaxException;
+use GuzzleHttp\Exception\RequestException;
 
 class Product extends AppMaxController{
                
